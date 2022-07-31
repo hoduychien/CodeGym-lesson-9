@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: #F1F1F1;
+    color:#222222;
+}
+
+a{
+    text-decoration: none;
+}
+.topnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+.topnav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    margin: 0;
+}
+
+.topnav_item{
+    min-width: 100px;
+    text-align: center;
+}
+
+.topnav_item:hover{
+    background-color: #080808;
+}
+
+.topnav .logo p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.topnav ion-icon{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.topnav .active{
+    background-color: #080808;
+}
+
+.toggle{
+    display: none;
+}
+
+.login{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.login ion-icon{
+    font-size: 25px;
+    color: #fff;
+    margin-right: -25px;
+}
+
+.main{
+    display: flex;
+}
+.sidebar{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .sidebar_item{
+    padding: 20px;
+    font-weight: 500;
+}
+
+.contents{
+    padding: 30px;
+    flex: 3;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 155px;
+}
+
+.banner{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner .banner_item{
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #dbdbdb;
+}
+
+.footer{
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 21px;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav{
+        flex-wrap: wrap;
+    }
+    .topnav_item{
+        display: none;
+        text-align: center;
+    }
+    .login{
+        display: none;
+    }
+    .topnav .toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        flex-direction: column;
+    }
+    .sidebar{
+        flex-direction: row;
+    }
+    .banner{
+        padding: 20px 10px;
+    }
+}
+
